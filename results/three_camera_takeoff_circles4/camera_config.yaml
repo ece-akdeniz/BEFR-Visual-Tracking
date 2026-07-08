@@ -1,0 +1,39 @@
+# Three cameras for visualization
+
+image:
+  width: 40
+  height: 20 
+
+intrinsics:
+  fx: 26.0
+  fy: 26.0
+  cx: 20.0
+  cy: 10.0
+
+noise:
+  sigma_u: 1.0
+  sigma_v: 0.75
+  quantize: true
+  detection_probability: 1.0
+
+world:
+  frame_id: world
+  flight_volume_center: [0.0, 0.0, 0.5]
+  up: [0.0, 0.0, 1.0]
+  reference_camera_id: camera_0
+
+cameras:
+  - id: camera_0
+    frame_id: camera_0_optical_frame
+    position: [-2.0, -2.0, 0.0]
+    look_at: [0.0, 0.0, 0.5]
+
+  - id: camera_1
+    frame_id: camera_1_optical_frame
+    position: [2.0, 2.0, 0.0]
+    look_at: [0.0, 0.0, 0.5]
+
+  - id: camera_2
+    frame_id: camera_2_optical_frame
+    position: [-2.0, 2.0, 0.0]
+    look_at: [0.0, 0.0, 0.5]

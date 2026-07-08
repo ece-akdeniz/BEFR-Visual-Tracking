@@ -1,0 +1,30 @@
+{
+  "position_rmse": 4.388863493856777e-07,
+  "velocity_rmse": 0.011962146112537753,
+  "position_max_error": 1.1006751998354767e-05,
+  "velocity_max_error": 0.3,
+  "total_runtime_sec": 0.8649707095464692,
+  "mean_update_time_sec": 0.0013751521614411273,
+  "p95_update_time_sec": 0.0013241248205304152,
+  "max_update_time_sec": 0.33632474998012185,
+  "filter_frequency_hz": 30.04777070542162,
+  "convergence_time_sec": 0.13333333,
+  "recovery_time_sec": null,
+  "num_steps": 629,
+  "num_visible_cameras_mean": 4.0,
+  "num_rejected_detections": 2,
+  "covariance_position_mean": [
+    1.0678250161726193e-13,
+    6.100634836901983e-14,
+    4.087209011803599e-14
+  ],
+  "covariance_velocity_mean": [
+    0.0015907322480244752,
+    0.0015906799635911108,
+    0.0015906563401290972
+  ],
+  "nis_mean": 0.07816799774094803,
+  "nis_p95": 0.031727227882210364,
+  "reprojection_rmse": null,
+  "triangulation_reprojection_rmse": 2.173719727474521e-09
+}

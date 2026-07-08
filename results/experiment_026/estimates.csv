@@ -1,0 +1,1 @@
+timestamp,est_x,est_y,est_z,est_vx,est_vy,est_vz,pos_err,vel_err,num_visible_cameras,update_time_sec,nis_mean,cov_px,cov_py,cov_pz,cov_vx,cov_vy,cov_vz

@@ -1,0 +1,15 @@
+{
+  "experiment_id": 103,
+  "experiment_title": "Advanced \u2014 calibration noise",
+  "variant": "noise_0p5",
+  "trajectory": "calibration_figure_eight_3d",
+  "active_cameras": [
+    "camera_0",
+    "camera_1",
+    "camera_2"
+  ],
+  "pixel_noise_std": 0.5,
+  "experiment_type": "calibration",
+  "calibrated_config_path": "/Users/Student/Desktop/COURSES/UNI STUTTGART/SoSe 26/BEFR/BEFR-Project/results/experiment_021/calibrated_cameras.yaml",
+  "num_estimate_rows": 0
+}

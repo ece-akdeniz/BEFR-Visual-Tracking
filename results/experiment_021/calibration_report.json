@@ -1,0 +1,36 @@
+{
+  "experiment": "experiment_021",
+  "active_cameras": [
+    "camera_0",
+    "camera_1",
+    "camera_2"
+  ],
+  "before_optimization": {
+    "camera_translation_rmse": 2.7465400791133446e-15,
+    "camera_rotation_rmse_deg": 1.272221872585407e-14,
+    "trajectory_rmse": 2.8384071002994435,
+    "reprojection_rmse": 0.6656306926653682,
+    "trajectory_rmse_aligned": 0.010192502792091303,
+    "camera_translation_rmse_aligned": 8.389422573913919,
+    "scale_estimate": 1.002038963223974,
+    "num_timesteps": 80,
+    "num_cameras": 3
+  },
+  "after_optimization": {
+    "camera_translation_rmse": 4.653629147834644,
+    "camera_rotation_rmse_deg": 0.6371974115036808,
+    "trajectory_rmse": 4.521762296679725,
+    "reprojection_rmse": 0.6043790922598818,
+    "trajectory_rmse_aligned": 0.01109968296119801,
+    "camera_translation_rmse_aligned": 8.346017325908116,
+    "scale_estimate": 5.643740858689776,
+    "num_timesteps": 80,
+    "num_cameras": 3
+  },
+  "bundle_adjustment": {
+    "success": true,
+    "cost": 38.054495044236674,
+    "nfev": 21,
+    "reprojection_rmse": 0.35040149943378557
+  }
+}

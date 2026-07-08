@@ -1,0 +1,18 @@
+{
+  "experiment": "calibration_planar_figure_eight",
+  "trajectory": "planar_figure_eight",
+  "duration_s": 50.26548245743669,
+  "sample_rate_hz": 30.0,
+  "source": "offline_generator",
+  "active_cameras": [
+    "camera_0",
+    "camera_1",
+    "camera_2",
+    "camera_3"
+  ],
+  "pixel_noise_std": 1.0,
+  "dropout_scenario": "none",
+  "random_seed": 42,
+  "num_detection_rows": 6032,
+  "num_ground_truth_rows": 1508
+}

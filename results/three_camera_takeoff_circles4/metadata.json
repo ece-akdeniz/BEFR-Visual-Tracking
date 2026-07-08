@@ -1,0 +1,17 @@
+{
+  "experiment": "three_camera_takeoff_circles",
+  "trajectory": "takeoff_three_circles",
+  "duration_s": 21.0,
+  "sample_rate_hz": 10.0,
+  "source": "offline_generator",
+  "active_cameras": [
+    "camera_0",
+    "camera_1",
+    "camera_2"
+  ],
+  "pixel_noise_std": 1.0,
+  "dropout_scenario": "none",
+  "random_seed": 42,
+  "num_detection_rows": 633,
+  "num_ground_truth_rows": 211
+}

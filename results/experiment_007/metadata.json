@@ -1,0 +1,17 @@
+{
+  "experiment_id": 1,
+  "experiment_title": "Main filter comparison",
+  "variant": "main_comparison",
+  "filter": "ukf",
+  "trajectory": "slow_circle",
+  "active_cameras": [
+    "camera_0",
+    "camera_1",
+    "camera_2"
+  ],
+  "pixel_noise_std": 1.0,
+  "dropout_scenario": "none",
+  "process_noise_std": 0.5,
+  "experiment_type": "tracking",
+  "num_estimate_rows": 629
+}

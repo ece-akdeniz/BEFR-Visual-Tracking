@@ -1,0 +1,11 @@
+{
+  "experiment_id": 1,
+  "experiment_title": "Main filter comparison",
+  "stage": "shared_dataset",
+  "trajectory": "slow_circle",
+  "pixel_noise_std": 1.0,
+  "random_seed": 42,
+  "num_detection_rows": 2516,
+  "num_ground_truth_rows": 629,
+  "num_estimate_rows": 0
+}

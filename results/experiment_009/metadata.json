@@ -1,0 +1,15 @@
+{
+  "experiment_id": 101,
+  "experiment_title": "Advanced \u2014 manoeuvre observability",
+  "variant": "hover",
+  "trajectory": "stationary_hover",
+  "active_cameras": [
+    "camera_0",
+    "camera_1",
+    "camera_2"
+  ],
+  "pixel_noise_std": 1.0,
+  "experiment_type": "calibration",
+  "calibrated_config_path": "/Users/Student/Desktop/COURSES/UNI STUTTGART/SoSe 26/BEFR/BEFR-Project/results/experiment_008/calibrated_cameras.yaml",
+  "num_estimate_rows": 0
+}

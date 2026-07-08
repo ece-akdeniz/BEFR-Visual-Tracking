@@ -1,0 +1,6 @@
+# Recorded experiment outputs. Regenerate with:
+#   generate_canonical_dataset
+# or live recording via record_experiment.launch.py
+
+# Rosbag folders can be large.
+**/rosbag/

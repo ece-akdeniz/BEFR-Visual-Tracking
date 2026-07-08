@@ -1,0 +1,18 @@
+{
+  "experiment": "canonical_slow_circle",
+  "trajectory": "slow_circle",
+  "duration_s": 20.943951023931955,
+  "sample_rate_hz": 30.0,
+  "source": "offline_generator",
+  "active_cameras": [
+    "camera_0",
+    "camera_1",
+    "camera_2",
+    "camera_3"
+  ],
+  "pixel_noise_std": 1.0,
+  "dropout_scenario": "none",
+  "random_seed": 42,
+  "num_detection_rows": 2516,
+  "num_ground_truth_rows": 629
+}

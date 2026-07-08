@@ -1,0 +1,21 @@
+{
+  "experiment_id": 0,
+  "experiment_title": "Mathematical sanity test",
+  "variant": "sanity",
+  "filter": "ukf",
+  "trajectory": "slow_circle",
+  "active_cameras": [
+    "camera_0",
+    "camera_1",
+    "camera_2",
+    "camera_3"
+  ],
+  "pixel_noise_std": 1.0,
+  "dropout_scenario": "none",
+  "process_noise_std": 0.5,
+  "experiment_type": "tracking",
+  "random_seed": 42,
+  "num_detection_rows": 2516,
+  "num_ground_truth_rows": 629,
+  "num_estimate_rows": 629
+}

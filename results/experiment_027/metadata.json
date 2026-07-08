@@ -1,0 +1,11 @@
+{
+  "experiment_id": 104,
+  "experiment_title": "Advanced \u2014 impact on tracking",
+  "stage": "shared_dataset",
+  "trajectory": "calibration_figure_eight_3d",
+  "pixel_noise_std": 1.0,
+  "random_seed": 42,
+  "num_detection_rows": 8568,
+  "num_ground_truth_rows": 2142,
+  "num_estimate_rows": 0
+}

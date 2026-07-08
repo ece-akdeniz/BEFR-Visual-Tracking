@@ -1,0 +1,14 @@
+{
+  "experiment_id": 104,
+  "experiment_title": "Advanced \u2014 impact on tracking",
+  "variant": "true_poses",
+  "filter": "ukf",
+  "camera_pose_source": "true",
+  "active_cameras": [
+    "camera_0",
+    "camera_1",
+    "camera_2"
+  ],
+  "experiment_type": "advanced_tracking",
+  "num_estimate_rows": 2142
+}

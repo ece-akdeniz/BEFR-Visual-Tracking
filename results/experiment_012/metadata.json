@@ -1,0 +1,12 @@
+{
+  "experiment_id": 101,
+  "experiment_title": "Advanced \u2014 manoeuvre observability",
+  "variant": "planar_eight",
+  "trajectory": "planar_figure_eight",
+  "pixel_noise_std": 1.0,
+  "experiment_type": "calibration",
+  "random_seed": 42,
+  "num_detection_rows": 6032,
+  "num_ground_truth_rows": 1508,
+  "num_estimate_rows": 0
+}

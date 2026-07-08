@@ -1,0 +1,25 @@
+{
+  "calibration_before": {
+    "camera_translation_rmse": 2.7465400791133446e-15,
+    "camera_rotation_rmse_deg": 1.272221872585407e-14,
+    "trajectory_rmse": 2.776263258774753,
+    "reprojection_rmse": 1.1771846069272058,
+    "trajectory_rmse_aligned": 0.017885951917979082,
+    "camera_translation_rmse_aligned": 8.371066914777932,
+    "scale_estimate": 0.9986024656268071,
+    "num_timesteps": 80,
+    "num_cameras": 3
+  },
+  "calibration_after": {
+    "camera_translation_rmse": 1.8876884255844726,
+    "camera_rotation_rmse_deg": 29.54329811660901,
+    "trajectory_rmse": 2.8722465096294663,
+    "reprojection_rmse": 1.0973551150517762,
+    "trajectory_rmse_aligned": 0.029409377947501036,
+    "camera_translation_rmse_aligned": 7.944600851457759,
+    "scale_estimate": 1.2423435502696303,
+    "num_timesteps": 80,
+    "num_cameras": 3
+  },
+  "bundle_adjustment_reprojection_rmse": 0.636214950228877
+}

@@ -1,0 +1,106 @@
+image:
+  width: 640
+  height: 480
+intrinsics:
+  fx: 320.0
+  fy: 320.0
+  cx: 320.0
+  cy: 240.0
+noise:
+  sigma_u: 1.0
+  sigma_v: 1.0
+  quantize: true
+  detection_probability: 1.0
+world:
+  frame_id: world
+  flight_volume_center:
+  - 0.0
+  - 0.0
+  - 1.5
+  up:
+  - 0.0
+  - 0.0
+  - 1.0
+  reference_camera_id: camera_0
+calibration:
+  source_experiment: experiment_021
+  reference_camera_id: camera_0
+  active_cameras:
+  - camera_0
+  - camera_1
+  - camera_2
+  use_ideal_detections: false
+  use_metric_scale_from_ground_truth: true
+  evaluation_before:
+    camera_translation_rmse: 2.7465400791133446e-15
+    camera_rotation_rmse_deg: 1.272221872585407e-14
+    trajectory_rmse: 2.8384071002994435
+    reprojection_rmse: 0.6656306926653682
+    trajectory_rmse_aligned: 0.010192502792091303
+    camera_translation_rmse_aligned: 8.389422573913919
+    scale_estimate: 1.002038963223974
+    num_timesteps: 80
+    num_cameras: 3
+  evaluation_after:
+    camera_translation_rmse: 4.653629147834644
+    camera_rotation_rmse_deg: 0.6371974115036808
+    trajectory_rmse: 4.521762296679725
+    reprojection_rmse: 0.6043790922598818
+    trajectory_rmse_aligned: 0.01109968296119801
+    camera_translation_rmse_aligned: 8.346017325908116
+    scale_estimate: 5.643740858689776
+    num_timesteps: 80
+    num_cameras: 3
+  bundle_adjustment:
+    success: true
+    cost: 38.054495044236674
+    nfev: 21
+    reprojection_rmse: 0.35040149943378557
+  scale_ambiguity_note: Without a metric baseline constraint, reconstruction is defined
+    up to a global similarity transform. Use evaluation *_aligned metrics and scale_estimate
+    when comparing against simulation ground truth.
+cameras:
+- id: camera_0
+  frame_id: camera_0_optical_frame
+  position:
+  - 0.0
+  - 0.0
+  - 0.0
+  orientation_xyzw:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+- id: camera_1
+  frame_id: camera_1_optical_frame
+  position:
+  - -0.705294618668568
+  - 0.003821290504494226
+  - 0.7225454218150513
+  orientation_xyzw:
+  - -6.382061685786349e-05
+  - 0.7104259625047222
+  - -0.003764533845712238
+  - 0.7037618745080558
+- id: camera_2
+  frame_id: camera_2_optical_frame
+  position:
+  - 0.6983267356948569
+  - -0.005408028018618983
+  - 0.7114370560901531
+  orientation_xyzw:
+  - -0.0034818164150845488
+  - -0.7048073962671839
+  - -0.001686482731528455
+  - 0.7093881637703867
+- id: camera_3
+  frame_id: camera_3_optical_frame
+  position:
+  - -3.0000000000000044
+  - 1.9999999999999971
+  - 7.000000000000006
+  orientation_xyzw:
+  - 0.08360822094277437
+  - 0.9015601700770701
+  - -0.20184808543367008
+  - 0.37343844945071
