@@ -35,10 +35,10 @@ PYTHONPATH=. streamlit run dashboard/streamlit_app.py
 
 Open **http://localhost:8501** in a browser.
 
-- **Interactive tracker** — load saved runs from `results/experiment_NNN/` or rerun filters offline
-- **3D visualisation / Time plots** — trajectory and error over time
-- **Filter comparison** — KF vs EKF vs UKF (e.g. `experiment_005`, `006`, `007`)
-- **Advanced calibration** — bundle adjustment on calibration manoeuvres
+- **Interactive tracker**: load saved runs from `results/experiment_NNN/` or rerun filters offline
+- **3D visualisation / Time plots**: trajectory and error over time
+- **Filter comparison**: KF vs EKF vs UKF (e.g. `experiment_005`, `006`, `007`)
+- **Advanced calibration**: bundle adjustment on calibration manoeuvres
 
 ## Offline experiments
 
