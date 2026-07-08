@@ -47,7 +47,7 @@ PYTHONPATH=. python -m befr_visual_tracking.run_experiments --experiment 1
 PYTHONPATH=. python -m befr_visual_tracking.run_calibration results/calibration_figure_eight_3d
 ```
 
-See `OFFLINE_RESULTS.md` for experiment summaries.
+See `OFFLINE_RESULTS.md` for a short summary of experiment runs.
 
 ## Presentation figures
 
