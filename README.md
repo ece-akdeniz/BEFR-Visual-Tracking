@@ -71,7 +71,7 @@ python befr_visual_tracking/notebooks/generate_observability_manoeuvres_figure.p
 
 Notebook source: `befr_visual_tracking/notebooks/final_vis.ipynb`
 
-## ROS 2 (optional)
+## ROS 2
 
 ```bash
 colcon build --packages-select befr_visual_tracking
