@@ -1,0 +1,44 @@
+# Narrow baseline geometry for Experiment 5.
+
+image:
+  width: 640
+  height: 480
+
+intrinsics:
+  fx: 320.0
+  fy: 320.0
+  cx: 320.0
+  cy: 240.0
+
+noise:
+  sigma_u: 1.0
+  sigma_v: 1.0
+  quantize: true
+  detection_probability: 1.0
+
+world:
+  frame_id: world
+  flight_volume_center: [0.0, 0.0, 1.5]
+  up: [0.0, 0.0, 1.0]
+  reference_camera_id: camera_0
+
+cameras:
+  - id: camera_0
+    frame_id: camera_0_optical_frame
+    position: [0.0, -2.0, 1.5]
+    look_at: [0.0, 0.0, 1.5]
+
+  - id: camera_1
+    frame_id: camera_1_optical_frame
+    position: [2.0, 0.0, 1.5]
+    look_at: [0.0, 0.0, 1.5]
+
+  - id: camera_2
+    frame_id: camera_2_optical_frame
+    position: [-2.0, 0.0, 1.5]
+    look_at: [0.0, 0.0, 1.5]
+
+  - id: camera_3
+    frame_id: camera_3_optical_frame
+    position: [1.5, 1.5, 2.5]
+    look_at: [0.0, 0.0, 1.5]

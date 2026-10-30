@@ -1,0 +1,56 @@
+# Multi-camera configuration for BEFR visual tracking (Phase 1).
+#
+# World frame: Gazebo ``world`` (+X forward, +Y left, +Z up).
+# Camera poses describe each camera_optical_frame in that world frame.
+# Advanced Task 1 uses camera_0 optical frame as the reference gauge.
+
+image:
+  width: 640
+  height: 480
+
+intrinsics:
+  fx: 320.0
+  fy: 320.0
+  cx: 320.0
+  cy: 240.0
+
+noise:
+  sigma_u: 1.0
+  sigma_v: 1.0
+  quantize: true
+  detection_probability: 1.0
+
+world:
+  frame_id: world
+  flight_volume_center: [0.0, 0.0, 1.5]
+  up: [0.0, 0.0, 1.0]
+  reference_camera_id: camera_0
+
+cameras:
+  # Left / front of flight volume (negative Y, near centre in X).
+  - id: camera_0
+    frame_id: camera_0_optical_frame
+    position: [0.0, -4.0, 1.5]
+    look_at: [0.0, 0.0, 1.5]
+    orientation_xyzw: [0.0, 0.70710678, 0.70710678, 0.0]
+
+  # Right / front (+X side).
+  - id: camera_1
+    frame_id: camera_1_optical_frame
+    position: [4.0, 0.0, 1.5]
+    look_at: [0.0, 0.0, 1.5]
+    orientation_xyzw: [-0.5, 0.5, 0.5, -0.5]
+
+  # Rear (-X side).
+  - id: camera_2
+    frame_id: camera_2_optical_frame
+    position: [-4.0, 0.0, 1.5]
+    look_at: [0.0, 0.0, 1.5]
+    orientation_xyzw: [0.5, 0.5, 0.5, 0.5]
+
+  # Elevated diagonal (+X, +Y, higher Z) for depth observability.
+  - id: camera_3
+    frame_id: camera_3_optical_frame
+    position: [3.0, 3.0, 3.5]
+    look_at: [0.0, 0.0, 1.5]
+    orientation_xyzw: [0.78022746, -0.3231808, -0.20494092, 0.49477116]

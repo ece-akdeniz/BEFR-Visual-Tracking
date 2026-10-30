@@ -1,0 +1,25 @@
+# Shared filter parameters for fair KF / EKF / UKF comparisons.
+
+triangulation:
+  min_ray_angle_deg: 2.0
+  max_condition_number: 1.0e8
+  monte_carlo_samples: 500
+
+motion_model:
+  acceleration_noise_std: 0.5
+
+measurement:
+  innovation_gate: 9.21
+
+filters:
+  kf:
+    filter_type: kf
+  ekf:
+    filter_type: ekf
+  ukf:
+    filter_type: ukf
+    alpha: 0.001
+    beta: 2.0
+    kappa: 0.0
+    max_invalid_sigma_points: 6
+    max_initial_covariance_eigenvalue: 100.0

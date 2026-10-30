@@ -1,0 +1,60 @@
+# Controlled experiment plan (Phase 11 / 17–19).
+#
+# Run with:
+#   python -m befr_visual_tracking.run_experiments --list
+#   python -m befr_visual_tracking.run_experiments --experiment 0
+#   python -m befr_visual_tracking.run_experiments --experiment 1 --filter ekf
+#
+# Each completed run writes:
+#   results/experiment_NNN/
+#     metadata.json
+#     detections.csv
+#     estimates.csv
+#     ground_truth.csv
+#     camera_config.yaml
+#     metrics.json
+
+basic_experiments:
+  0:
+    title: Mathematical sanity test
+    varies: noise_off
+  1:
+    title: Main filter comparison
+    varies: filter_type
+  2:
+    title: Number of cameras
+    varies: active_camera_count
+  3:
+    title: Pixel noise
+    varies: pixel_noise_std
+  4:
+    title: Camera dropout
+    varies: dropout_schedule
+  5:
+    title: Camera geometry
+    varies: camera_layout
+  6:
+    title: Motion-model mismatch
+    varies: trajectory_type
+  7:
+    title: Target distance
+    varies: orbit_radius
+
+advanced_experiments:
+  101:
+    title: Manoeuvre observability
+    varies: calibration_trajectory
+  102:
+    title: Calibration camera count
+    varies: active_camera_count
+  103:
+    title: Calibration noise
+    varies: pixel_noise_std
+  104:
+    title: Impact on tracking
+    varies: camera_pose_source
+
+principles:
+  - Change one variable at a time
+  - Experiment 0 must pass before tuning noise
+  - Shared datasets are reused when noted in the registry

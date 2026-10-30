@@ -1,0 +1,10 @@
+dataset_recorder:
+  ros__parameters:
+    use_sim_time: true
+    ground_truth_topic: "/model/rrbot/odometry"
+    sensor_rate_hz: 30.0
+    record_duration_s: 21.0
+    output_dir: ""
+    experiment_name: "live_slow_circle"
+    trajectory_name: "slow_circle"
+    random_seed: 42

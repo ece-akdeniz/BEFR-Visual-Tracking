@@ -1,0 +1,12 @@
+camera_simulator:
+  ros__parameters:
+    use_sim_time: true
+    ground_truth_topic: "/model/rrbot/odometry"
+    sensor_rate_hz: 30.0
+    cameras_config_path: ""
+    detection_topic_prefix: "/visual_tracking"
+    publish_visualization: true
+    visualization_topic: "/visual_tracking/visualization"
+    ray_length: 6.0
+    axis_length: 1.0
+    random_seed: 42

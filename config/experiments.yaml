@@ -1,0 +1,67 @@
+# Experiment and trajectory definitions for dataset recording.
+
+canonical_slow_circle:
+  trajectory: slow_circle
+  duration: null  # null = one full circle period
+  sample_rate_hz: 30.0
+  center: [0.0, 0.0, 1.5]
+  radius: 1.0
+  angular_rate: 0.3
+  random_seed: 42
+  output_name: canonical_slow_circle
+
+# Advanced calibration trajectories (Phase 11).
+calibration_stationary_hover:
+  trajectory: stationary_hover
+  duration: 20.0
+  sample_rate_hz: 30.0
+  center: [0.0, 0.0, 1.5]
+  random_seed: 42
+  output_name: calibration_stationary_hover
+
+calibration_straight_line:
+  trajectory: straight_line
+  duration: 20.0
+  sample_rate_hz: 30.0
+  start: [-1.5, -1.0, 1.2]
+  end: [1.5, 1.0, 1.8]
+  random_seed: 42
+  output_name: calibration_straight_line
+
+calibration_planar_figure_eight:
+  trajectory: planar_figure_eight
+  duration: null
+  sample_rate_hz: 30.0
+  center: [0.0, 0.0, 1.5]
+  scale_x: 1.0
+  scale_y: 0.7
+  angular_rate: 0.25
+  random_seed: 42
+  output_name: calibration_planar_figure_eight
+
+calibration_figure_eight_3d:
+  trajectory: calibration_figure_eight_3d
+  duration: null
+  sample_rate_hz: 30.0
+  center: [0.0, 0.0, 1.5]
+  scale_x: 1.2
+  scale_y: 0.9
+  vertical_amplitude: 0.45
+  angular_rate: 0.22
+  random_seed: 42
+  output_name: calibration_figure_eight_3d
+
+trajectories:
+  slow_circle:
+    description: Slow horizontal circle at constant altitude visible from all cameras.
+    center: [0.0, 0.0, 1.5]
+    radius: 1.0
+    angular_rate: 0.3
+  stationary_hover:
+    description: Fixed hover — weak parallax, poor calibration observability.
+  straight_line:
+    description: Linear motion — often degenerate for relative-pose estimation.
+  planar_figure_eight:
+    description: Planar figure-eight at constant altitude.
+  calibration_figure_eight_3d:
+    description: 3D figure-eight with climb/descend for strong parallax.

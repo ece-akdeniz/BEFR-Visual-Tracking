@@ -1,0 +1,19 @@
+visual_tracker:
+  ros__parameters:
+    use_sim_time: true
+    filter_type: ekf
+    detection_topic_prefix: "/visual_tracking"
+    state_estimate_topic: "/visual_tracking/state_estimate"
+    active_cameras:
+      - camera_0
+      - camera_1
+      - camera_2
+      - camera_3
+    acceleration_noise_std: 0.5
+    pixel_noise_std_u: 1.0
+    pixel_noise_std_v: 1.0
+    innovation_gate: 9.21
+    monte_carlo_samples: 500
+    random_seed: 42
+    # Live Gazebo needs a wider window so all 4 camera messages arrive before update.
+    sync_slop_sec: 0.035
